@@ -1,0 +1,98 @@
+@import url('https://fonts-googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.body{
+    font-size: 18px;
+    background: rgb(6, 24, 29);
+}
+
+.header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:10px 10%;
+    background: rgb(46, 216, 55); 
+    display: flex;
+    justify-content:space-between ;   
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 800;
+    color: antiquewhite;
+    text-shadow: blue 2px 2px;
+    transition: 3s;
+}
+.logo:hover{
+    rotate: 365deg;
+    color: brown;
+    text-shadow: black 3px 3px;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(4, 79, 145);
+    font-weight: 600;
+    margin-right: 30mm;
+    transition: 3s;
+}
+.navbar a:hover{
+    color: rgb(223, 23, 116);
+    font-size: 15px;
+}
+
+.content{
+    margin-top: 50mm;
+    margin-left:20mm;
+    padding-bottom: 40px;
+    color: rgb(39, 165, 223);
+    transition: 5s;
+}
+.content:hover{
+    rotate: 30deg ;
+    color:blueviolet;
+}
+
+.description{
+    margin-left: 22mm;
+    font-size: 20px;
+    display: flexbox;
+    color: bisque;
+    align-items: center;
+}
+
+.home-sci,
+.home-sci{
+    bottom: 0;
+     position: fixed;
+    left: 0;
+    width: 100%;
+    padding:10px 10%;
+    background:linear-gradient(blue,aqua);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.home-sci a{
+    text-decoration: none;
+    font-size: 20px;
+    color: bisque;
+    transition: 1s;
+}
+.home-sci a:hover{
+    font-size: 15px;
+    color: black;
+}
+

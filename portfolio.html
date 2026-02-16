@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Video Sharing Platform</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <button class="menu-btn"><i class="fas fa-bars"></i></button>
+            <div class="logo">MyPortfolio</div>
+        </div>
+        <div class="nav-center">
+            <input type="text" placeholder="Search videos, photos...">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="nav-right">
+            <button class="upload-btn"><i class="fas fa-video"></i> Upload</button>
+            <button class="live-btn"><i class="fas fa-circle"></i> Go Live</button>
+            <button class="user-btn"><i class="fas fa-user-circle"></i></button>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-item active"><i class="fas fa-home"></i> Home</div>
+        <div class="sidebar-item"><i class="fas fa-fire"></i> Trending</div>
+        <div class="sidebar-item"><i class="fas fa-download"></i> Subscriptions</div>
+        <hr>
+        <div class="sidebar-item"><i class="fas fa-play-circle"></i> My Videos</div>
+        <div class="sidebar-item"><i class="fas fa-heart"></i> Liked Videos</div>
+        <div class="sidebar-item"><i class="fas fa-history"></i> History</div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Featured Section -->
+        <section class="featured">
+            <div class="featured-card">
+                <img src="https://via.placeholder.com/1200x400" alt="Featured">
+                <div class="featured-info">
+                    <h2>Welcome to My Portfolio</h2>
+                    <p>Share your videos, photos and connect with the world</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Grid -->
+        <section class="content-grid">
+            <!-- Video Card Template -->
+            <div class="content-card">
+                <div class="thumbnail">
+                    <img src="https://via.placeholder.com/320x180" alt="Video">
+                    <span class="duration">4:32</span>
+                    <span class="live-badge">LIVE</span>
+                </div>
+                <div class="card-info">
+                    <h3>Amazing Project Showcase</h3>
+                    <p class="channel">My Channel</p>
+                    <p class="stats">1.2M views • 2 weeks ago</p>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <div class="thumbnail">
+                    <img src="https://via.placeholder.com/320x180" alt="Video">
+                    <span class="duration">8:15</span>
+                </div>
+                <div class="card-info">
+                    <h3>Web Development Tutorial</h3>
+                    <p class="channel">My Channel</p>
+                    <p class="stats">856K views • 1 month ago</p>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <div class="thumbnail">
+                    <img src="https://via.placeholder.com/320x180" alt="Video">
+                    <span class="duration">5:47</span>
+                </div>
+                <div class="card-info">
+                    <h3>Photography Portfolio</h3>
+                    <p class="channel">My Channel</p>
+                    <p class="stats">542K views • 3 weeks ago</p>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <div class="thumbnail">
+                    <img src="https://via.placeholder.com/320x180" alt="Video">
+                    <span class="duration">6:20</span>
+                </div>
+                <div class="card-info">
+                    <h3>Design Process Breakdown</h3>
+                    <p class="channel">My Channel</p>
+                    <p class="stats">423K views • 1 month ago</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Video Player Modal (for when users click on a video) -->
+    <div class="modal" id="videoModal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="player-container">
+                <video width="100%" controls>
+                    <source src="" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-details">
+                <h2>Video Title</h2>
+                <div class="video-meta">
+                    <span class="views">1.2M views</span>
+                    <span class="date">2 weeks ago</span>
+                </div>
+                <div class="action-buttons">
+                    <button class="action-btn"><i class="fas fa-thumbs-up"></i> Like</button>
+                    <button class="action-btn"><i class="fas fa-thumbs-down"></i> Dislike</button>
+                    <button class="action-btn"><i class="fas fa-share"></i> Share</button>
+                    <button class="action-btn"><i class="fas fa-bookmark"></i> Save</button>
+                </div>
+                <div class="comments-section">
+                    <h3>Comments</h3>
+                    <div class="comment-input">
+                        <input type="text" placeholder="Add a comment...">
+                        <button>Comment</button>
+                    </div>
+                    <div class="comments-list">
+                        <div class="comment">
+                            <p class="comment-author">John Doe</p>
+                            <p class="comment-text">Great content! Really helpful.</p>
+                            <div class="comment-actions">
+                                <span>👍 5</span>
+                                <span>Reply</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

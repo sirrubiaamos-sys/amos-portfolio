@@ -1,0 +1,96 @@
+@import url('https://fonts-googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.body{
+      background: #0e0750;
+      color: #1b154d;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:10px 10%;
+    background:rgb(16, 103, 218);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color:#ededed ;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: aqua;
+}
+
+.contact{
+    text-overflow: 0;
+    display: flex;
+    padding: 20px 20px;
+    width: fit-content;
+    margin-top: 50mm;
+    margin-left: 45%;
+    color: black;
+    background: rgb(220, 243, 245);
+    border-color: rgb(127, 214, 218);
+    border-radius: 30px;
+    justify-content: space-between;
+    box-shadow: rgba(63, 61, 61, 0.849) 3px 3px;
+}
+
+.contact .container-a{
+    text-overflow: 0;
+    background: azure;
+    width: 100%;
+    border-radius: 20px;
+    transition: 2s;
+}
+.container-a :hover{
+    color: blue;
+}
+
+.home-sci{
+    bottom: 0;
+     position: fixed;
+    left: 0;
+    width: 100%;
+    padding:10px 10%;
+    background:linear-gradient(blue,aqua);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.home-sci a{
+    font-size: 20px;
+    text-decoration: none;
+    color: bisque;
+    transition: 1s;
+}
+.home-sci a:hover{
+    font-size: 15px;
+    color: black;
+    text-decoration: wavy;
+}
