@@ -3,76 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amos Rubia - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>My Portfolio</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; }
+        .hero { text-align: center; padding: 50px; background-color: #282c34; color: white; }
+        .hero h1 { font-size: 48px; }
+        .animate {
+            animation: fadeIn 3s infinite;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+    </style>
 </head>
 <body>
-    <header class="header">
-        <div class="logo">AMOS</div>
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#vision">Vision</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Hi, I'm Amos Rubia</h1>
-            <h3>Frontend Developer</h3>
-            <p class="animated-text">
-                <span class="typewriter">The future of web development!</span>
-            </p>
-            <p>I'm a passionate learner trying to learn any skills that can be needed in various Tech fields. I'm mostly a small time developer, Sound Engineer, Video and Photo Editor. I'm also open to collaborate with everyone who is looking forward to make the society better for everyone.</p>
-            <div class="btn-box">
-                <a href="#contact">Hire Me</a>
-                <a href="#contact">Let's Talk</a>
-            </div>
-        </div>
-        <div class="hero-social">
-            <a href="#"><i class="fas fa-phone"></i> Phone</a>
-            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
-            <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-            <a href="#"><i class="fab fa-github"></i> GitHub</a>
-            <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
-            <a href="#"><i class="fab fa-telegram"></i> Telegram</a>
-        </div>
-    </section>
-
-    <section class="about" id="about">
-        <h2>About Me</h2>
-        <p>Learn more about my journey and expertise in web development and design.</p>
-    </section>
-
-    <section class="services" id="services">
-        <h2>Services</h2>
-        <p>I offer a variety of services tailored to your needs.</p>
-    </section>
-
-    <section class="portfolio" id="portfolio">
-        <h2>Portfolio</h2>
-        <p>Check out my recent projects and work.</p>
-    </section>
-
-    <section class="vision" id="vision">
-        <h2>Vision</h2>
-        <p>My vision for the future of web development and technology.</p>
-    </section>
-
-    <section class="contact" id="contact">
-        <h2>Contact Me</h2>
-        <p>Get in touch with me for collaborations or inquiries.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Amos Rubia. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <div class="hero">
+        <h1 class="animate">The future of web development!</h1>
+    </div>
 </body>
 </html>
